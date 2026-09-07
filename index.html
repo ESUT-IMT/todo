@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ledger — A To-Do List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="page">
+    <header class="masthead">
+      <h1>Ledger</h1>
+      <p class="subtitle">Keep a running account of what needs doing.</p>
+    </header>
+
+    <section class="entry-panel">
+      <form id="task-form" novalidate>
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Write a task…"
+          autocomplete="off"
+          maxlength="120"
+        >
+        <button type="submit">Add</button>
+      </form>
+      <p id="form-error" class="form-error" role="alert" aria-live="polite"></p>
+    </section>
+
+    <section class="tally" aria-live="polite">
+      <span id="tally-text">0 tasks</span>
+    </section>
+
+    <section class="list-panel">
+      <ul id="task-list"></ul>
+      <p id="empty-state" class="empty-state">Nothing on the ledger yet. Add your first task above.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
