@@ -144,7 +144,7 @@ body {
   font-size: 0.85rem;
 }
 
-.task-checkbox[aria-checked="true"] {
+.task-checkbox[aria-checked='true'] {
   background: var(--green);
   border-color: var(--green);
   color: #fff;
