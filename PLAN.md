@@ -29,11 +29,11 @@
 
 ## Expected input / output per feature
 
-| Feature | Input | Output |
-|---|---|---|
-| Add task | Text typed into the input, e.g. `"Buy milk"` | New row appears at the top of the list; total count increases by 1; input clears |
-| Add task (invalid) | Empty or whitespace-only text | Error message shown, no task added |
-| Mark complete | Click the round checkbox next to a task | Row shows a check mark and strikethrough text |
-| Edit task | Click "Edit", change text, click "Save" | Row updates to show the new text; empty edits are ignored |
-| Delete task | Click "Delete" on a row | Row disappears from the list; total count decreases by 1 |
-| Reload page | Refresh the browser | Previously saved tasks reappear (loaded from Local Storage) |
+| Feature            | Input                                        | Output                                                                           |
+| ------------------ | -------------------------------------------- | -------------------------------------------------------------------------------- |
+| Add task           | Text typed into the input, e.g. `"Buy milk"` | New row appears at the top of the list; total count increases by 1; input clears |
+| Add task (invalid) | Empty or whitespace-only text                | Error message shown, no task added                                               |
+| Mark complete      | Click the round checkbox next to a task      | Row shows a check mark and strikethrough text                                    |
+| Edit task          | Click "Edit", change text, click "Save"      | Row updates to show the new text; empty edits are ignored                        |
+| Delete task        | Click "Delete" on a row                      | Row disappears from the list; total count decreases by 1                         |
+| Reload page        | Refresh the browser                          | Previously saved tasks reappear (loaded from Local Storage)                      |
